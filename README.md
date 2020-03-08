@@ -1,3 +1,3 @@
 # NBody-Simulation
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://github.com/LR-Argentino/NBody-Simulation/blob/master/images/Capture.PNG)
