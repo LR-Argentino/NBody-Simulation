@@ -6,6 +6,7 @@ public class Body{
     public double mass;
     public String imgFileName;
     public double distance;
+    public double exertedForce;
 
     public Body(double xP, double yP, double xV, double yV, double m, String img){
         xxPos = xP;
@@ -28,6 +29,16 @@ public class Body{
     public double calcDistance(Body b){
         distance = Math.sqrt(Math.pow((b.xxPos - this.xxPos),2) + Math.pow((b.yyPos - this.yyPos),2));
         return distance;
+    }
+
+    public double calcForceExertedBy(Body b){
+        // this method should call calcDistance
+        // F = G * m * m1 / calcDistance²
+        double gravitationalConstant = 6.67 / Math.pow(10,11);
+        exertedForce = (gravitationalConstant * this.mass * b.mass) / Math.pow(calcDistance(b),2);
+
+        return exertedForce;
+
     }
 
 }
