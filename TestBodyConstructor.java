@@ -69,7 +69,8 @@ public class TestBodyConstructor {
         checkEquals(yyVel, b.yyVel, "yyVel");
         checkEquals(mass, b.mass, "mass");
         checkStringEquals(imgFileName, b.imgFileName, "path to image");
-
+        
+        
         System.out.println("Checking second Body constructor...");
 
         Body bCopy = new Body(b);
